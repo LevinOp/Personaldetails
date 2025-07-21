@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Details</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      background-color: #333;
+      color: white;
+      border: 1px solid #555;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Personal Details</h1>
+
+  <form>
+    <label>What is your name?</label>
+    <input type="text" name="name" required>
+
+    <label>What is your age?</label>
+    <input type="text" name="age" required>
+
+    <label>Where do you live?</label>
+    <select name="location" required>
+      <option value="">--Select your state--</option>
+      <option>Maharashtra</option>
+      <option>Delhi</option>
+      <option>Andhra Pradesh</option>
+      <option>Uttar Pradesh</option>
+      <option>Madhya Pradesh</option>
+      <option>Bihar</option>
+      <option>Kerala</option>
+      <option>Punjab</option>
+    </select>
+
+    <label>What is your favourite game?</label>
+    <input type="text" name="game" required>
+
+    <label>In which school do you study?</label>
+    <input type="text" name="school" required>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
